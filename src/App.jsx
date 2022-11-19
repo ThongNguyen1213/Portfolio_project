@@ -1,21 +1,22 @@
-import styles from "./style"
-import { Navbar, Introduction, MyProgress, Skills, Projects } from './components';
- 
-const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}  `}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar/>
-        </div>
-      </div> 
-      
-      <div className={`bg-primary ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Introduction />
-        </div>
-      </div>
+import {Introduction, MyProgress, Navbar, Projects } from './components';
+import Contact from './components/Contact';
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}>
+// import Projects from './components/Projects';
+ 
+const App = () => {
+
+  return (
+    <div className=" w-full bg-primary">
+      <div>
+        <Navbar />
+        <Introduction />
+        <MyProgress />
+        <Projects />
+        <Contact />
+      </div>
+    
+
+      {/* <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}>
         <div className={`${styles.boxWidth}`}>
           <MyProgress />
         </div>
@@ -32,9 +33,16 @@ const App = () => (
           <Projects />
         </div>
       </div>
-  </div>
+
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth} flex justify-end`}>
+          <Contact />
+        </div>
+      </div> */}
+    </div>
   
   
-);
+  );
+}
 
 export default App
