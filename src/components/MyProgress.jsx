@@ -5,13 +5,14 @@ import { codecademyfrontpage } from '../assets'
 
 const MyProgress = () => {
     const [content, setContent ] = useState('The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.');
-  const [selectedSkill, setSelectedSkill] = useState('htmllogo');
+    const [selectedSkill, setSelectedSkill] = useState('htmllogo');
 
   const chooseSkill = ({target}) => {
     const content = target.getAttribute('content');
     setTimeout(() => {setContent(content)},500);
     setSelectedSkill(target.id);
   }
+
 // Running the progress bar
     const showProgress = () => {
             let i = 0;
@@ -58,21 +59,19 @@ const MyProgress = () => {
             }
         } 
         
-     
-
 // Trigger progress bar when roll down the window
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if(window.scrollY >= 600) {
+            const hT = document.getElementById('progress-skill').offsetTop;
+            
+            console.log(hT);
+            if (window.scrollY + 350 > hT){
                 return start();
-             }
+            }
         })
     },[])
-    
-    window.addEventListener('scroll', () => {
-        console.log(window.scrollY);
-    })
 
+    
 // Flag the function to trigger once
     let started = false;
     const start = () => {
