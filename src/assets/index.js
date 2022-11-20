@@ -24,7 +24,7 @@ import htmlsmallicon from "../assets/html_small_icon.png";
 import jssmallicon from "../assets/js_small_icon.png";
 import reactsmallicon from "../assets/react_small_icon.png";
 import tailwindsmallicon from "../assets/tailwind_small_icon.png";
-import logotn from "../assets/logo-tn.png";
+import logotn from "../assets/logo_tn.png";
 import close from "../assets/close.png";
 import menu from "../assets/menu.svg";
 
