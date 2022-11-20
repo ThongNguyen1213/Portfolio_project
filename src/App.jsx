@@ -14,34 +14,7 @@ const App = () => {
         <Projects />
         <Contact />
       </div>
-    
-
-      {/* <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}>
-        <div className={`${styles.boxWidth}`}>
-          <MyProgress />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth} flex justify-end`}>
-          <Skills />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}>
-        <div className={`${styles.boxWidth}`}>
-          <Projects />
-        </div>
-      </div>
-
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth} flex justify-end`}>
-          <Contact />
-        </div>
-      </div> */}
     </div>
-  
-  
   );
 }
 

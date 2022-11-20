@@ -53,8 +53,6 @@ const Introduction = () => (
             </div>
         </div>
 
-        {/* About me */} 
-        
         <div className="mt-[40px] font-b612 text-center">
             <h2 className="text-[11px] md:text-[14px] ">Get to Know</h2>
             <h1 className="text-[18px] md:text-[20px] text-brightBlue">About Me</h1>

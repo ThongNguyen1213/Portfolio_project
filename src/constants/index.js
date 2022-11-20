@@ -118,7 +118,7 @@ export const completedProjects = [
                 {icon: jssmallicon, logo:"jslogo"}, 
                 {icon: tailwindsmallicon, logo: "tailwindlogo"}, 
                 {icon: reactsmallicon, logo:"reactlogo"}],
-        url: ""
+        url: "https://github.com/ThongNguyen1213/modern_bank_app"
     },
     {
         id: "tea-cozy_project",
@@ -127,7 +127,8 @@ export const completedProjects = [
         img: teacozyproject,
         devtool: [{icon: htmlsmallicon, logo: "htmllogo"}, 
                 {icon: csssmallicon, logo: "csslogo"}, 
-                {icon: jssmallicon, logo:"jslogo"}]
+                {icon: jssmallicon, logo:"jslogo"}],
+        url:"https://github.com/ThongNguyen1213/Tea-Cozy-Project"
     },
     {
         id: "fun-project",
@@ -137,6 +138,7 @@ export const completedProjects = [
         devtool: [{icon: htmlsmallicon, logo: "htmllogo"}, 
                 {icon: csssmallicon, logo: "csslogo"}, 
                 {icon: jssmallicon, logo:"jslogo"}],
+        url:"https://github.com/ThongNguyen1213/Bau-cua-ca-cop-fun-project"
     },
     {
         id:"spotify_project",
@@ -147,6 +149,7 @@ export const completedProjects = [
                 {icon: csssmallicon, logo: "csslogo"}, 
                 {icon: jssmallicon, logo:"jslogo"}, 
                 {icon: tailwindsmallicon, logo: "tailwindlogo"}, 
-                {icon: reactsmallicon, logo:"reactlogo"}]
+                {icon: reactsmallicon, logo:"reactlogo"}],
+        url:""
     }
 ]

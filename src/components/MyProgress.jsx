@@ -7,11 +7,12 @@ const MyProgress = () => {
     const [content, setContent ] = useState('The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.');
     const [selectedSkill, setSelectedSkill] = useState('htmllogo');
 
-  const chooseSkill = ({target}) => {
+// Change skill base on the target id
+    const chooseSkill = ({target}) => {
     const content = target.getAttribute('content');
     setTimeout(() => {setContent(content)},500);
     setSelectedSkill(target.id);
-  }
+    }
 
 // Running the progress bar
     const showProgress = () => {
@@ -63,7 +64,6 @@ const MyProgress = () => {
     useEffect(() => {
         window.addEventListener('scroll', () => {
             const hT = document.getElementById('progress-skill').offsetTop;
-            
             console.log(hT);
             if (window.scrollY + 350 > hT){
                 return start();
@@ -80,9 +80,6 @@ const MyProgress = () => {
       }
       started = true;
     }
-
-
-
 
   return (
     <div className="w-full mt-[100px] pt-[50px]"

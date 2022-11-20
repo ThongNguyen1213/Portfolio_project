@@ -1,11 +1,12 @@
 import React from 'react';
 import { logotn, close, menu } from '../assets';
 import { navLinks } from '../constants';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
+//Change Navbar style when scrolling down
     window.addEventListener('scroll', () => {
         const navbar = document.getElementById("navbar");
         if (window.scrollY > 20) {
@@ -14,7 +15,8 @@ const Navbar = () => {
            return navbar.style.backgroundColor = "#002531";
         }
     })
-    
+ 
+//Close Navbar when clicking outside the box
     const removeNav = ({target}) => {
         if(!target.closest('#sidebar') && (toggle === true)) {
             setToggle(false);
@@ -45,7 +47,7 @@ const Navbar = () => {
                     <div className={`${toggle ? 'visible' : 'hidden' } flex fixed mt-[36px] w-[150px] xs:w-[200px] h-[1000px] z-10 bg-lessdarkBlue sidebar`}
                         >
                         <ul className="flex flex-col text-[12px] mt-[50px] font-orbitron ">
-                            {navLinks.map((nav,index) => (
+                            {navLinks.map((nav) => (
                                 <li key={nav.id}
                                     className="mb-[20px] ml-[20px] text-morebrightBlue hover:text-brightYellow  transition-colors duration-200">
                                     <a href={`#${nav.id}`}
@@ -56,8 +58,7 @@ const Navbar = () => {
                     </div>
                 </div>          
         </div>
-  )
-}
+    )}
 
 export default Navbar
 

@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const Projects = () => {
 
+// Render the skill from displayed skill from project
     const chooseTarget = ({target}) => {
         const logo = target.getAttribute('chooseskill');
         document.getElementById(logo).click();
@@ -19,13 +20,13 @@ const Projects = () => {
                 {completedProjects.map((project) => (
                     <div key={project.id}
                         className="flex justify-center items-center relative mt-[20px] sm:mt-[50px]">
-                        <img src={project.img}
-                            className="w-[330px] h-[200px] left-0 rounded-lg absolute z-0 "/>
+                        <a href={project.url} target="_blank" className="w-[330px] h-[200px]"><img src={project.img}
+                            className="w-[330px] h-[200px] left-0 rounded-lg absolute z-0 "/></a>
                         <div className="z-[2] ml-auto">
                             <h1 className="text-[16px] font-orbitron font-bold text-white text-right">{project.name}</h1>
-                            <div className="flex justify-center items-center px-[30px] w-[330px] h-[200px] sm:w-[350px] sm:h-[125px] md:h-[115px] mt-[5px] rounded-xl border-brightBlue bg-darkBlue opacity-80 border-2 ">
+                            <a href={project.url} target="_blank" ><div className="flex justify-center items-center px-[30px] w-[330px] h-[200px] sm:w-[350px] sm:h-[125px] md:h-[115px] mt-[5px] rounded-xl border-brightBlue bg-darkBlue opacity-80 border-2 ">
                                 <p className="text-[13px] sm:text-[10px] md:text-[10px] leading-6 font-b612 tracking-wider text-white">{project.description}</p>
-                            </div>
+                            </div></a>
                             <div className="text-right mt-[5px]">
                                 {project.devtool.map((index) => (
                                     <div className="inline-block px-[3px] cursor-pointer"
