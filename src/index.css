@@ -80,6 +80,7 @@
   }
   100% {
     transform: translateY(-1500px);
+    height: 0%;
   }
 }
 
