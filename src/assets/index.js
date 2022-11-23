@@ -27,6 +27,7 @@ import tailwindsmallicon from "../assets/tailwind_small_icon.png";
 import logotn from "../assets/logo_tn.png";
 import close from "../assets/close.png";
 import menu from "../assets/menu.svg";
+import loadingicon from "../assets/Union.svg";
 
 export {
     profilepic,
@@ -57,5 +58,6 @@ export {
     tailwindsmallicon,
     logotn,
     close,
-    menu
+    menu,
+    loadingicon,
 }

@@ -70,6 +70,35 @@
   }
 }
 
+.runningUp {
+  animation: preLoading 1s ease-in-out 2.2s forwards;
+}
+
+@keyframes preLoading {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+
+.runningRight {
+  animation: dash 5s linear forwards;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+}
+
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
@@ -150,4 +179,20 @@ header.nav-fixed {
 .nav-active {
   background-color:#fff;
   box-shadow: 5px -1px 12px -5px grey;
+}
+/* 
+#preloader {
+  background-image: url(./assets/loading_icon.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed; */
+  /* z-index:100;
+} */
+
+.protected {
+  stroke-dasharray: 421;
+  stroke-dashoffset: 421;
 }
